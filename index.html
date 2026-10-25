@@ -3,6 +3,10 @@
     <head>
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <!-- Laravel Cloud answers any unknown path with this page, so send those to the not-found page before anything draws. -->
+        <script>
+            if (!['/', '/index.html'].includes(location.pathname)) location.replace('/404.html');
+        </script>
         <title>Yehya Yasser, Software Engineer</title>
         <meta name="description" content="I keep large platforms modern, secure and shipping." />
         <link rel="canonical" href="https://yehya.dev/" />

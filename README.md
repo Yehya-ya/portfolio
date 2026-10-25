@@ -45,9 +45,9 @@ msedge --headless=new --no-pdf-header-footer --print-to-pdf=public/yehya-yasser-
 Create the application from this repository and turn on **Run as a static website**:
 
 - **Static root path:** `dist`
-- **Build command:** `npm ci && npm run build`
+- **Build command:** `npm run build` (Cloud runs `npm ci` itself first)
 
-After the first deploy, check on the free `laravel.cloud` domain that the case study URLs open and an unknown path shows the 404 page. Then attach `yehya.dev`.
+Cloud serves `/work/masroofi` and `/work/masroofi/` alike, and answers any other unknown path with `index.html` and a 200. A line at the top of `index.html` sends those visitors on to `/404.html`.
 
 ## Why it's fast
 

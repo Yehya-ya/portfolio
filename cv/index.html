@@ -1,0 +1,180 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>Yehya Yasser, CV</title>
+        <meta name="robots" content="noindex" />
+        <style>
+            @view-transition {
+                navigation: auto;
+            }
+        </style>
+        <link rel="stylesheet" href="/src/css/app.css" />
+
+        <!-- Printed to public/yehya-yasser-cv.pdf: one A4 page, ink on paper whatever the colour scheme. html:root outranks the site's dark-mode colours, which the build places after this block. -->
+        <style>
+            @page {
+                size: A4;
+                margin: 13mm 15mm;
+            }
+            html:root {
+                color-scheme: light;
+                --paper: #fff;
+                --ink: #111;
+                --muted: #5f5f5f;
+                --line: #e2e2e2;
+            }
+            html {
+                font-size: 10.5pt;
+            }
+            body {
+                font-size: 1rem;
+                line-height: 1.45;
+            }
+            @media print {
+                body > :not(main) {
+                    display: none !important;
+                }
+            }
+        </style>
+    </head>
+    <body class="bg-paper text-ink">
+        <main class="mx-auto max-w-[180mm] px-0 py-6 print:py-0">
+            <header class="flex items-end justify-between gap-6 border-b-2 border-ink pb-3">
+                <div>
+                    <h1 class="text-[2.4rem] font-bold leading-none tracking-[-0.04em]">Yehya Yasser</h1>
+                    <p class="mt-1.5 text-[1.15rem] font-semibold">
+                        Software Engineer, FinTech Developer · Laravel, PHP, AWS, Docker
+                    </p>
+                </div>
+                <ul class="text-right text-[0.95rem] leading-snug">
+                    <li>Dubai, United Arab Emirates</li>
+                    <li>yehyaysr@gmail.com</li>
+                    <li>yehya.dev</li>
+                    <li>linkedin.com/in/yehya-yasser</li>
+                    <li>github.com/Yehya-ya</li>
+                </ul>
+            </header>
+
+            <p class="mt-4">
+                Software engineer with six years of Laravel experience. As project lead, I run web engineering for a
+                multi-tenant property-management SaaS in the UAE: a ~300,000-line API and nine web applications. I
+                specialise in modernising large codebases, running them on Docker and AWS, and making every release
+                reviewable and safe.
+            </p>
+
+            <section class="mt-5">
+                <h2 class="border-b border-line pb-1 text-[0.95rem] font-semibold text-muted">Experience</h2>
+
+                <div class="mt-3">
+                    <div class="flex justify-between gap-4">
+                        <h3 class="font-bold">Project Lead, ISKAAN, Dubai</h3>
+                        <p class="shrink-0 text-muted">Sep 2025 – present</p>
+                    </div>
+                    <ul class="mt-1 list-disc space-y-0.5 pl-4">
+                        <li>
+                            Lead up to 6 developers within a cross-functional team of up to 12; own code review and
+                            releases for 9 repositories.
+                        </li>
+                        <li>
+                            Led the migration of the core API from Lumen 10 to Laravel 13 / PHP 8.5, and the admin
+                            portal to Angular 22.
+                        </li>
+                        <li>
+                            Containerised the platform and moved production to AWS ECS with ECR, CodeBuild and Secrets
+                            Manager.
+                        </li>
+                        <li>
+                            Built Claude Code skills that review every pull request for a ticket and prepare deployments
+                            end to end.
+                        </li>
+                        <li>
+                            Technical lead for the finance and accounting module and the Mollak (Dubai Land Department)
+                            integration.
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="mt-3">
+                    <div class="flex justify-between gap-4">
+                        <h3 class="font-bold">Full Stack Developer, ISKAAN, Dubai</h3>
+                        <p class="shrink-0 text-muted">Sep 2022 – Aug 2025</p>
+                    </div>
+                    <ul class="mt-1 list-disc space-y-0.5 pl-4">
+                        <li>
+                            1,170+ commits to the core Laravel API and its Angular portals, starting with the notices
+                            module.
+                        </li>
+                        <li>
+                            Built a resident-services platform from scratch (Laravel API, Angular apps); wrote about 90%
+                            of the API.
+                        </li>
+                        <li>Mentored several junior developers through code review and day-to-day support.</li>
+                        <li>
+                            Introduced Larastan, Rector and Pint; built a Docker dev environment and blue-green
+                            disaster-recovery deploys.
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="mt-3">
+                    <div class="flex justify-between gap-4">
+                        <h3 class="font-bold">Full Stack Developer (part-time), ScanTitan, remote</h3>
+                        <p class="shrink-0 text-muted">Oct 2020 – Oct 2022</p>
+                    </div>
+                    <ul class="mt-1 list-disc space-y-0.5 pl-4">
+                        <li>
+                            Subscriptions, referrals and PDF scan reports for a cyber-exposure scanning SaaS (Laravel,
+                            Vue).
+                        </li>
+                        <li>
+                            Multi-channel notifications (email, SMS, Teams, Slack, push), penetration-test fixes and API
+                            performance work.
+                        </li>
+                    </ul>
+                </div>
+            </section>
+
+            <div class="mt-5 grid grid-cols-2 gap-8">
+                <section>
+                    <h2 class="border-b border-line pb-1 text-[0.95rem] font-semibold text-muted">Skills</h2>
+                    <dl class="mt-2 grid grid-cols-[6.5rem_1fr] gap-y-1">
+                        <dt class="text-muted">Backend</dt>
+                        <dd>Laravel, PHP 8.5, MySQL, REST APIs, Pest</dd>
+                        <dt class="text-muted">Frontend</dt>
+                        <dd>Angular, Vue, Blade, Tailwind CSS</dd>
+                        <dt class="text-muted">Infrastructure</dt>
+                        <dd>
+                            Docker, AWS (ECS, ECR, CodeBuild), DigitalOcean, Azure DevOps, Laravel Cloud, Laravel
+                            Nightwatch
+                        </dd>
+                        <dt class="text-muted">Practice</dt>
+                        <dd>Code review, release management, Larastan, Rector, Claude Code, MCP</dd>
+                    </dl>
+                </section>
+
+                <section>
+                    <h2 class="border-b border-line pb-1 text-[0.95rem] font-semibold text-muted">
+                        Education and languages
+                    </h2>
+                    <p class="mt-2"><strong class="font-bold">BSc Computer Engineering</strong></p>
+                    <p>Ankara University, 2017 – 2022</p>
+                    <p class="mt-1">Arabic (native), English (full professional), Turkish (intermediate)</p>
+
+                    <h2 class="mt-4 border-b border-line pb-1 text-[0.95rem] font-semibold text-muted">
+                        Side projects
+                    </h2>
+                    <p class="mt-2">
+                        <strong class="font-bold">Masroofi</strong>: bilingual finance app, Laravel 13 and Hotwire
+                        Native.
+                    </p>
+                    <p class="mt-1">
+                        <strong class="font-bold">Game engine</strong>: 2D engine and editor in Java with OpenGL and
+                        ECS.
+                    </p>
+                </section>
+            </div>
+        </main>
+    </body>
+</html>

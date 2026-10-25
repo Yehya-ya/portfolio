@@ -1,0 +1,315 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>Masroofi, Yehya Yasser</title>
+        <meta name="description" content="A bilingual personal-finance app for the web and Android." />
+        <link rel="canonical" href="https://yehya.dev/work/masroofi/" />
+        <meta name="color-scheme" content="light dark" />
+        <meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)" />
+        <meta name="theme-color" content="#0c0c0c" media="(prefers-color-scheme: dark)" />
+        <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+
+        <meta property="og:type" content="article" />
+        <meta property="og:title" content="Masroofi, Yehya Yasser" />
+        <meta property="og:description" content="A bilingual personal-finance app for the web and Android." />
+        <meta property="og:url" content="https://yehya.dev/work/masroofi/" />
+        <meta property="og:image" content="https://yehya.dev/og.png" />
+        <meta property="og:image:width" content="1200" />
+        <meta property="og:image:height" content="630" />
+        <meta name="twitter:card" content="summary_large_image" />
+
+        <style>
+            @view-transition {
+                navigation: auto;
+            }
+        </style>
+
+        <link rel="stylesheet" href="/src/css/app.css" />
+    </head>
+    <body class="bg-paper font-sans text-ink antialiased">
+        <a
+            href="#main"
+            class="sr-only focus:not-sr-only focus:absolute focus:left-4 focus:top-4 focus:z-50 focus:bg-paper focus:px-3 focus:py-2"
+        >
+            Skip to content
+        </a>
+
+        <header class="dot-grid border-b border-line">
+            <nav class="flex items-center justify-between px-6 pt-6 font-medium sm:px-10 sm:pt-8" aria-label="Site">
+                <a href="/" class="hover:underline">yehya.dev</a>
+                <a href="/#work" class="hover:underline">All work</a>
+            </nav>
+
+            <div class="mx-auto flex max-w-5xl flex-col items-center px-6 pb-20 pt-24 text-center sm:pb-28 sm:pt-32">
+                <p
+                    class="mb-8 inline-flex items-center gap-2.5 rounded-full border border-line bg-paper px-4 py-1.5 text-[0.9375rem] text-muted tabular-nums"
+                >
+                    <span class="size-2 rounded-full bg-ink"></span>
+                    2026
+                </p>
+                <h1
+                    class="case-title max-w-[16ch] text-balance text-[clamp(2.75rem,7vw,5.5rem)] font-bold leading-[0.95] tracking-[-0.05em]"
+                    style="view-transition-name: case-masroofi"
+                >
+                    Masroofi
+                </h1>
+                <p class="mt-6 max-w-[40ch] text-balance text-[clamp(1.25rem,2.2vw,1.5rem)] text-muted">
+                    A bilingual personal-finance app for the web and Android.
+                </p>
+            </div>
+        </header>
+
+        <main id="main" class="mx-auto max-w-5xl px-6 py-16 sm:py-24">
+            <dl class="mb-12 flex flex-wrap gap-x-12 gap-y-4">
+                <div>
+                    <dt class="text-muted">Stack</dt>
+                    <dd class="font-semibold">Laravel 13, PHP 8.5, Hotwire Turbo, Hotwire Native, Laravel MCP, Pest</dd>
+                </div>
+                <div>
+                    <dt class="text-muted">Links</dt>
+                    <dd class="flex flex-wrap gap-x-5 font-semibold">
+                        <a href="https://masroofi.yehya.dev" class="underline hover:no-underline">Live app</a>
+                    </dd>
+                </div>
+            </dl>
+
+            <div class="space-y-6 sm:space-y-8 mb-14">
+                <figure>
+                    <img
+                        src="/images/projects/masroofi/overview.webp"
+                        alt="Masroofi overview: spending this month, gold and silver gains, and statement lines waiting to be reconciled."
+                        width="1600"
+                        height="900"
+                        loading="lazy"
+                        decoding="async"
+                        class="w-full rounded-2xl border border-line"
+                    />
+                    <figcaption class="mt-3 text-[0.9375rem] text-muted">
+                        The overview. Net worth stays hidden until you tap.
+                    </figcaption>
+                </figure>
+                <figure>
+                    <img
+                        src="/images/projects/masroofi/gold.webp"
+                        alt="A gold savings account: worth today against what was paid, with gains before and after charges."
+                        width="1600"
+                        height="900"
+                        loading="lazy"
+                        decoding="async"
+                        class="w-full rounded-2xl border border-line"
+                    />
+                    <figcaption class="mt-3 text-[0.9375rem] text-muted">
+                        Gold held in grams, valued at the market rate.
+                    </figcaption>
+                </figure>
+
+                <div class="grid grid-cols-3 gap-3 sm:gap-6">
+                    <figure>
+                        <img
+                            src="/images/projects/masroofi/phone-overview-ar.webp"
+                            alt="The overview in Arabic, laid out right to left, in the Android app."
+                            width="720"
+                            height="1280"
+                            loading="lazy"
+                            decoding="async"
+                            class="w-full rounded-[clamp(0.75rem,3vw,1.75rem)] border border-line"
+                        />
+                        <figcaption class="mt-2 text-sm leading-snug text-muted sm:mt-3 sm:text-[0.9375rem]">
+                            Arabic, right to left
+                        </figcaption>
+                    </figure>
+                    <figure>
+                        <img
+                            src="/images/projects/masroofi/phone-accounts.webp"
+                            alt="The accounts list in the Android app."
+                            width="720"
+                            height="1280"
+                            loading="lazy"
+                            decoding="async"
+                            class="w-full rounded-[clamp(0.75rem,3vw,1.75rem)] border border-line"
+                        />
+                        <figcaption class="mt-2 text-sm leading-snug text-muted sm:mt-3 sm:text-[0.9375rem]">
+                            Accounts
+                        </figcaption>
+                    </figure>
+                    <figure>
+                        <img
+                            src="/images/projects/masroofi/phone-zakat.webp"
+                            alt="Zakat due for 1 Ramadan 1447, what has been paid and what is left."
+                            width="720"
+                            height="1280"
+                            loading="lazy"
+                            decoding="async"
+                            class="w-full rounded-[clamp(0.75rem,3vw,1.75rem)] border border-line"
+                        />
+                        <figcaption class="mt-2 text-sm leading-snug text-muted sm:mt-3 sm:text-[0.9375rem]">
+                            Zakat on the Hijri date
+                        </figcaption>
+                    </figure>
+                </div>
+            </div>
+
+            <figure class="space-y-3 dot-grid mb-14 rounded-2xl border border-line p-5 sm:p-8">
+                <ol class="flex flex-col items-stretch gap-1.5 sm:flex-row sm:items-center">
+                    <li
+                        class="rounded-xl border border-line bg-paper px-4 py-3 text-center font-semibold leading-tight sm:flex-1"
+                    >
+                        Statement PDF or email
+                    </li>
+                    <li class="flex justify-center text-muted" aria-hidden="true">
+                        <svg
+                            class="size-5 rotate-90 sm:rotate-0"
+                            viewBox="0 0 20 20"
+                            fill="none"
+                            stroke="currentColor"
+                            stroke-width="1.6"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                        >
+                            <path d="M3 10h13m-4-4 4 4-4 4" />
+                        </svg>
+                    </li>
+                    <li
+                        class="rounded-xl border border-line bg-paper px-4 py-3 text-center font-semibold leading-tight sm:flex-1"
+                    >
+                        Bank parser
+                    </li>
+                    <li class="flex justify-center text-muted" aria-hidden="true">
+                        <svg
+                            class="size-5 rotate-90 sm:rotate-0"
+                            viewBox="0 0 20 20"
+                            fill="none"
+                            stroke="currentColor"
+                            stroke-width="1.6"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                        >
+                            <path d="M3 10h13m-4-4 4 4-4 4" />
+                        </svg>
+                    </li>
+                    <li
+                        class="rounded-xl border border-line bg-paper px-4 py-3 text-center font-semibold leading-tight sm:flex-1"
+                    >
+                        Duplicate check
+                    </li>
+                    <li class="flex justify-center text-muted" aria-hidden="true">
+                        <svg
+                            class="size-5 rotate-90 sm:rotate-0"
+                            viewBox="0 0 20 20"
+                            fill="none"
+                            stroke="currentColor"
+                            stroke-width="1.6"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                        >
+                            <path d="M3 10h13m-4-4 4 4-4 4" />
+                        </svg>
+                    </li>
+                    <li
+                        class="rounded-xl border border-line bg-paper px-4 py-3 text-center font-semibold leading-tight sm:flex-1"
+                    >
+                        Auto-matching
+                    </li>
+                    <li class="flex justify-center text-muted" aria-hidden="true">
+                        <svg
+                            class="size-5 rotate-90 sm:rotate-0"
+                            viewBox="0 0 20 20"
+                            fill="none"
+                            stroke="currentColor"
+                            stroke-width="1.6"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                        >
+                            <path d="M3 10h13m-4-4 4 4-4 4" />
+                        </svg>
+                    </li>
+                    <li
+                        class="rounded-xl border border-line bg-paper px-4 py-3 text-center font-semibold leading-tight sm:flex-1"
+                    >
+                        Ledger
+                    </li>
+                </ol>
+            </figure>
+
+            <article class="case-study-body text-xl">
+                <h2>What it does</h2>
+                <ul>
+                    <li>
+                        <strong>Books in any currency:</strong> accounts, transfers, refunds, opening balances and
+                        nested categories, kept as double entry.
+                    </li>
+                    <li>
+                        <strong>Statement import:</strong> upload a bank PDF or forward it by email. Three banks are
+                        read directly; others come in through an AI assistant and are accepted only if the running
+                        balances add up.
+                    </li>
+                    <li>
+                        <strong>Budgets and recurring entries.</strong> A new budget can start from last month or last
+                        year’s spending.
+                    </li>
+                    <li>
+                        <strong>Gold and silver</strong> held in grams, valued at market rates, with gains before and
+                        after charges.
+                    </li>
+                    <li><strong>Zakat</strong> due on the Hijri anniversary, with a gold or silver nisab.</li>
+                    <li><strong>Lend and borrow,</strong> including split bills.</li>
+                    <li>Arabic and English, right to left included, in light and dark.</li>
+                </ul>
+                <h2>How it’s built</h2>
+                <ul>
+                    <li>Laravel 13 on PHP 8.5 with Hotwire Turbo: server-rendered pages that feel like an app.</li>
+                    <li>
+                        The Android app wraps the same pages with Hotwire Native and adds native tabs, push
+                        notifications and a fingerprint lock.
+                    </li>
+                    <li>
+                        Email import runs through a signed Mailgun webhook and a queued job; the user gets an email and
+                        a push when it’s done.
+                    </li>
+                    <li>
+                        Matching runs in steps: the same amount within three days, then transfers between your own
+                        accounts, then your rules. Anything left waits for review.
+                    </li>
+                    <li>
+                        An MCP server behind OAuth gives AI assistants 19 tools to read balances, record transactions
+                        and import statements. Editing and deleting are left out on purpose.
+                    </li>
+                    <li>Money is stored as whole numbers in the smallest unit.</li>
+                </ul>
+                <h2>Quality</h2>
+                <ul>
+                    <li>150 test files with about 660 cases, including browser tests.</li>
+                    <li>PHPStan at the highest level, 100% type coverage, and Rector and Pint on every commit.</li>
+                </ul>
+                <h2>Result</h2>
+                <p>Live at masroofi.yehya.dev and on Google Play.</p>
+            </article>
+
+            <a
+                href="/work/game-engine/"
+                class="group -mx-4 mt-20 flex items-baseline justify-between gap-6 rounded-2xl border-t border-line px-4 py-8 transition-colors duration-200 hover:border-transparent hover:bg-ink hover:text-paper focus-visible:bg-ink focus-visible:text-paper focus-visible:outline-none"
+            >
+                <span
+                    class="case-title next-title text-balance text-[clamp(1.625rem,3.4vw,3rem)] font-bold leading-[1.02] tracking-[-0.035em]"
+                    style="--case-name: case-game-engine"
+                    >A 2D game engine</span
+                >
+                <span class="shrink-0 text-muted group-hover:text-paper/70 group-focus-visible:text-paper/70"
+                    >Next</span
+                >
+            </a>
+        </main>
+
+        <footer
+            class="flex flex-col gap-2 px-6 py-8 text-[0.9375rem] text-muted sm:flex-row sm:justify-between sm:px-10"
+        >
+            <p>&copy; 2026 Yehya Yasser</p>
+            <p>
+                Plain HTML, Tailwind CSS and a little JavaScript.
+                <a href="https://github.com/Yehya-ya/portfolio" class="underline hover:text-ink">Source on GitHub</a>
+            </p>
+        </footer>
+    </body>
+</html>

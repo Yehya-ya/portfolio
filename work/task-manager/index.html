@@ -1,0 +1,246 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>Task Manager, Yehya Yasser</title>
+        <meta name="description" content="A kanban REST API in Laravel and its native Android app." />
+        <link rel="canonical" href="https://yehya.dev/work/task-manager/" />
+        <meta name="color-scheme" content="light dark" />
+        <meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)" />
+        <meta name="theme-color" content="#0c0c0c" media="(prefers-color-scheme: dark)" />
+        <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+
+        <meta property="og:type" content="article" />
+        <meta property="og:title" content="Task Manager, Yehya Yasser" />
+        <meta property="og:description" content="A kanban REST API in Laravel and its native Android app." />
+        <meta property="og:url" content="https://yehya.dev/work/task-manager/" />
+        <meta property="og:image" content="https://yehya.dev/og.png" />
+        <meta property="og:image:width" content="1200" />
+        <meta property="og:image:height" content="630" />
+        <meta name="twitter:card" content="summary_large_image" />
+
+        <style>
+            @view-transition {
+                navigation: auto;
+            }
+        </style>
+
+        <link rel="stylesheet" href="/src/css/app.css" />
+    </head>
+    <body class="bg-paper font-sans text-ink antialiased">
+        <a
+            href="#main"
+            class="sr-only focus:not-sr-only focus:absolute focus:left-4 focus:top-4 focus:z-50 focus:bg-paper focus:px-3 focus:py-2"
+        >
+            Skip to content
+        </a>
+
+        <header class="dot-grid border-b border-line">
+            <nav class="flex items-center justify-between px-6 pt-6 font-medium sm:px-10 sm:pt-8" aria-label="Site">
+                <a href="/" class="hover:underline">yehya.dev</a>
+                <a href="/#work" class="hover:underline">All work</a>
+            </nav>
+
+            <div class="mx-auto flex max-w-5xl flex-col items-center px-6 pb-20 pt-24 text-center sm:pb-28 sm:pt-32">
+                <p
+                    class="mb-8 inline-flex items-center gap-2.5 rounded-full border border-line bg-paper px-4 py-1.5 text-[0.9375rem] text-muted tabular-nums"
+                >
+                    <span class="size-2 rounded-full bg-ink"></span>
+                    2021
+                </p>
+                <h1
+                    class="case-title max-w-[16ch] text-balance text-[clamp(2.75rem,7vw,5.5rem)] font-bold leading-[0.95] tracking-[-0.05em]"
+                    style="view-transition-name: case-task-manager"
+                >
+                    Task Manager
+                </h1>
+                <p class="mt-6 max-w-[40ch] text-balance text-[clamp(1.25rem,2.2vw,1.5rem)] text-muted">
+                    A kanban REST API in Laravel and its native Android app.
+                </p>
+            </div>
+        </header>
+
+        <main id="main" class="mx-auto max-w-5xl px-6 py-16 sm:py-24">
+            <dl class="mb-12 flex flex-wrap gap-x-12 gap-y-4">
+                <div>
+                    <dt class="text-muted">Stack</dt>
+                    <dd class="font-semibold">Laravel 13, Sanctum, Pest, Java, Android</dd>
+                </div>
+                <div>
+                    <dt class="text-muted">Links</dt>
+                    <dd class="flex flex-wrap gap-x-5 font-semibold">
+                        <a href="https://github.com/Yehya-ya/TaskManager" class="underline hover:no-underline"
+                            >API on GitHub</a
+                        >
+                        <a href="https://github.com/Yehya-ya/TaskManagerAndroid" class="underline hover:no-underline"
+                            >Android app on GitHub</a
+                        >
+                    </dd>
+                </div>
+            </dl>
+
+            <div class="space-y-6 sm:space-y-8 mb-14">
+                <div class="grid grid-cols-3 gap-3 sm:gap-6">
+                    <figure>
+                        <img
+                            src="/images/projects/task-manager/projects.webp"
+                            alt="The Android app listing three projects, each with a short description."
+                            width="720"
+                            height="1600"
+                            loading="lazy"
+                            decoding="async"
+                            class="w-full rounded-[clamp(0.75rem,3vw,1.75rem)] border border-line"
+                        />
+                        <figcaption class="mt-2 text-sm leading-snug text-muted sm:mt-3 sm:text-[0.9375rem]">
+                            Projects
+                        </figcaption>
+                    </figure>
+                    <figure>
+                        <img
+                            src="/images/projects/task-manager/board.webp"
+                            alt="A project board on its Doing column, with three tasks, their due dates and arrows to move them between columns."
+                            width="720"
+                            height="1600"
+                            loading="lazy"
+                            decoding="async"
+                            class="w-full rounded-[clamp(0.75rem,3vw,1.75rem)] border border-line"
+                        />
+                        <figcaption class="mt-2 text-sm leading-snug text-muted sm:mt-3 sm:text-[0.9375rem]">
+                            A board, one column per page
+                        </figcaption>
+                    </figure>
+                    <figure>
+                        <img
+                            src="/images/projects/task-manager/board-dark.webp"
+                            alt="The same board in the dark theme."
+                            width="720"
+                            height="1600"
+                            loading="lazy"
+                            decoding="async"
+                            class="w-full rounded-[clamp(0.75rem,3vw,1.75rem)] border border-line"
+                        />
+                        <figcaption class="mt-2 text-sm leading-snug text-muted sm:mt-3 sm:text-[0.9375rem]">
+                            The dark theme
+                        </figcaption>
+                    </figure>
+                </div>
+            </div>
+
+            <figure class="space-y-3 dot-grid mb-14 rounded-2xl border border-line p-5 sm:p-8">
+                <ol class="flex flex-col items-stretch gap-1.5 sm:flex-row sm:items-center">
+                    <li
+                        class="rounded-xl border border-line bg-paper px-4 py-3 text-center font-semibold leading-tight sm:flex-1"
+                    >
+                        Android app
+                    </li>
+                    <li class="flex justify-center text-muted" aria-hidden="true">
+                        <svg
+                            class="size-5 rotate-90 sm:rotate-0"
+                            viewBox="0 0 20 20"
+                            fill="none"
+                            stroke="currentColor"
+                            stroke-width="1.6"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                        >
+                            <path d="M3 10h13m-4-4 4 4-4 4" />
+                        </svg>
+                    </li>
+                    <li
+                        class="rounded-xl border border-line bg-paper px-4 py-3 text-center font-semibold leading-tight sm:flex-1"
+                    >
+                        Volley
+                    </li>
+                    <li class="flex justify-center text-muted" aria-hidden="true">
+                        <svg
+                            class="size-5 rotate-90 sm:rotate-0"
+                            viewBox="0 0 20 20"
+                            fill="none"
+                            stroke="currentColor"
+                            stroke-width="1.6"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                        >
+                            <path d="M3 10h13m-4-4 4 4-4 4" />
+                        </svg>
+                    </li>
+                    <li
+                        class="rounded-xl border border-line bg-paper px-4 py-3 text-center font-semibold leading-tight sm:flex-1"
+                    >
+                        Laravel API
+                    </li>
+                    <li class="flex justify-center text-muted" aria-hidden="true">
+                        <svg
+                            class="size-5 rotate-90 sm:rotate-0"
+                            viewBox="0 0 20 20"
+                            fill="none"
+                            stroke="currentColor"
+                            stroke-width="1.6"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                        >
+                            <path d="M3 10h13m-4-4 4 4-4 4" />
+                        </svg>
+                    </li>
+                    <li
+                        class="rounded-xl border border-line bg-paper px-4 py-3 text-center font-semibold leading-tight sm:flex-1"
+                    >
+                        Sanctum and policies
+                    </li>
+                </ol>
+            </figure>
+
+            <article class="case-study-body text-xl">
+                <h2>What it does</h2>
+                <ul>
+                    <li>Projects with kanban columns. Every new project starts with To do, Doing and Done.</li>
+                    <li>Tasks with a description, a due date and an assignee, moved from column to column.</li>
+                    <li>Owners add members by email. Someone who hasn’t signed up yet is linked when they register.</li>
+                    <li>Members see the whole board but can change only the tasks assigned to them.</li>
+                    <li>Light and dark themes in the app.</li>
+                </ul>
+                <h2>How it’s built</h2>
+                <ul>
+                    <li>
+                        <strong>API:</strong> a Laravel REST API with Sanctum tokens, form-request validation, a policy
+                        on every action and JSON resources. Sign-in and registration are rate limited.
+                    </li>
+                    <li>Kept current from Laravel 8 in 2021 to Laravel 13 on PHP 8.5.</li>
+                    <li>
+                        51 Pest tests plus architecture tests, with a 98% coverage floor and 100% type coverage.
+                        Larastan and Rector keep it clean.
+                    </li>
+                    <li>
+                        <strong>Android:</strong> Java with MVVM (ViewModels and LiveData), Volley for HTTP, and a board
+                        with one swipeable page per column.
+                    </li>
+                </ul>
+            </article>
+
+            <a
+                href="/work/platform-modernisation/"
+                class="group -mx-4 mt-20 flex items-baseline justify-between gap-6 rounded-2xl border-t border-line px-4 py-8 transition-colors duration-200 hover:border-transparent hover:bg-ink hover:text-paper focus-visible:bg-ink focus-visible:text-paper focus-visible:outline-none"
+            >
+                <span
+                    class="case-title next-title text-balance text-[clamp(1.625rem,3.4vw,3rem)] font-bold leading-[1.02] tracking-[-0.035em]"
+                    style="--case-name: case-platform-modernisation"
+                    >Modernising a 300k‑line API</span
+                >
+                <span class="shrink-0 text-muted group-hover:text-paper/70 group-focus-visible:text-paper/70"
+                    >Next</span
+                >
+            </a>
+        </main>
+
+        <footer
+            class="flex flex-col gap-2 px-6 py-8 text-[0.9375rem] text-muted sm:flex-row sm:justify-between sm:px-10"
+        >
+            <p>&copy; 2026 Yehya Yasser</p>
+            <p>
+                Plain HTML, Tailwind CSS and a little JavaScript.
+                <a href="https://github.com/Yehya-ya/portfolio" class="underline hover:text-ink">Source on GitHub</a>
+            </p>
+        </footer>
+    </body>
+</html>

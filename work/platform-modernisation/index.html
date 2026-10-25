@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>Modernising a 300k‑line API, Yehya Yasser</title>
+        <meta name="description" content="Docker on AWS." />
+        <link rel="canonical" href="https://yehya.dev/work/platform-modernisation/" />
+        <meta name="color-scheme" content="light dark" />
+        <meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)" />
+        <meta name="theme-color" content="#0c0c0c" media="(prefers-color-scheme: dark)" />
+        <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+
+        <meta property="og:type" content="article" />
+        <meta property="og:title" content="Modernising a 300k‑line API, Yehya Yasser" />
+        <meta property="og:description" content="Docker on AWS." />
+        <meta property="og:url" content="https://yehya.dev/work/platform-modernisation/" />
+        <meta property="og:image" content="https://yehya.dev/og.png" />
+        <meta property="og:image:width" content="1200" />
+        <meta property="og:image:height" content="630" />
+        <meta name="twitter:card" content="summary_large_image" />
+
+        <style>
+            @view-transition {
+                navigation: auto;
+            }
+        </style>
+
+        <link rel="stylesheet" href="/src/css/app.css" />
+    </head>
+    <body class="bg-paper font-sans text-ink antialiased">
+        <a
+            href="#main"
+            class="sr-only focus:not-sr-only focus:absolute focus:left-4 focus:top-4 focus:z-50 focus:bg-paper focus:px-3 focus:py-2"
+        >
+            Skip to content
+        </a>
+
+        <header class="dot-grid border-b border-line">
+            <nav class="flex items-center justify-between px-6 pt-6 font-medium sm:px-10 sm:pt-8" aria-label="Site">
+                <a href="/" class="hover:underline">yehya.dev</a>
+                <a href="/#work" class="hover:underline">All work</a>
+            </nav>
+
+            <div class="mx-auto flex max-w-5xl flex-col items-center px-6 pb-20 pt-24 text-center sm:pb-28 sm:pt-32">
+                <p
+                    class="mb-8 inline-flex items-center gap-2.5 rounded-full border border-line bg-paper px-4 py-1.5 text-[0.9375rem] text-muted tabular-nums"
+                >
+                    <span class="size-2 rounded-full bg-ink"></span>
+                    2026
+                </p>
+                <h1
+                    class="case-title max-w-[16ch] text-balance text-[clamp(2.75rem,7vw,5.5rem)] font-bold leading-[0.95] tracking-[-0.05em]"
+                    style="view-transition-name: case-platform-modernisation"
+                >
+                    Modernising a 300k‑line API
+                </h1>
+                <p class="mt-6 max-w-[40ch] text-balance text-[clamp(1.25rem,2.2vw,1.5rem)] text-muted">
+                    Docker on AWS.
+                </p>
+            </div>
+        </header>
+
+        <main id="main" class="mx-auto max-w-5xl px-6 py-16 sm:py-24">
+            <dl class="mb-12 flex flex-wrap gap-x-12 gap-y-4">
+                <div>
+                    <dt class="text-muted">Role</dt>
+                    <dd class="font-semibold">Project Lead, ISKAAN</dd>
+                </div>
+                <div>
+                    <dt class="text-muted">Stack</dt>
+                    <dd class="font-semibold">Laravel 13, PHP 8.5, Docker, AWS ECS</dd>
+                </div>
+            </dl>
+
+            <article class="case-study-body text-xl">
+                <h2>Problem</h2>
+                <p>An eight-year-old API, about 300,000 lines, behind nine web apps.</p>
+                <h2>What I did</h2>
+                <ul>
+                    <li>Built one Docker image for web, scheduler and queue workers.</li>
+                    <li>Moved production to AWS ECS, built with CodeBuild.</li>
+                </ul>
+            </article>
+
+            <a
+                href="/work/ai-release-engineering/"
+                class="group -mx-4 mt-20 flex items-baseline justify-between gap-6 rounded-2xl border-t border-line px-4 py-8 transition-colors duration-200 hover:border-transparent hover:bg-ink hover:text-paper focus-visible:bg-ink focus-visible:text-paper focus-visible:outline-none"
+            >
+                <span
+                    class="case-title next-title text-balance text-[clamp(1.625rem,3.4vw,3rem)] font-bold leading-[1.02] tracking-[-0.035em]"
+                    style="--case-name: case-ai-release-engineering"
+                    >AI code review and releases</span
+                >
+                <span class="shrink-0 text-muted group-hover:text-paper/70 group-focus-visible:text-paper/70"
+                    >Next</span
+                >
+            </a>
+        </main>
+
+        <footer
+            class="flex flex-col gap-2 px-6 py-8 text-[0.9375rem] text-muted sm:flex-row sm:justify-between sm:px-10"
+        >
+            <p>&copy; 2026 Yehya Yasser</p>
+            <p>
+                Plain HTML, Tailwind CSS and a little JavaScript.
+                <a href="https://github.com/Yehya-ya/portfolio" class="underline hover:text-ink">Source on GitHub</a>
+            </p>
+        </footer>
+    </body>
+</html>

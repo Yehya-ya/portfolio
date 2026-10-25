@@ -1,0 +1,308 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>Yehya Yasser, Software Engineer</title>
+        <meta name="description" content="I keep large platforms modern, secure and shipping." />
+        <link rel="canonical" href="https://yehya.dev/" />
+        <meta name="color-scheme" content="light dark" />
+        <meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)" />
+        <meta name="theme-color" content="#0c0c0c" media="(prefers-color-scheme: dark)" />
+        <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+
+        <meta property="og:type" content="website" />
+        <meta property="og:title" content="Yehya Yasser, Software Engineer" />
+        <meta property="og:description" content="I keep large platforms modern, secure and shipping." />
+        <meta property="og:url" content="https://yehya.dev/" />
+        <meta property="og:image" content="https://yehya.dev/og.png" />
+        <meta property="og:image:width" content="1200" />
+        <meta property="og:image:height" content="630" />
+        <meta name="twitter:card" content="summary_large_image" />
+
+        <script type="application/ld+json">
+            {
+                "@context": "https://schema.org",
+                "@type": "Person",
+                "name": "Yehya Yasser",
+                "jobTitle": "Project Lead",
+                "worksFor": { "@type": "Organization", "name": "ISKAAN" },
+                "address": { "@type": "PostalAddress", "addressLocality": "Dubai", "addressCountry": "AE" },
+                "url": "https://yehya.dev",
+                "sameAs": ["https://www.linkedin.com/in/yehya-yasser/", "https://github.com/Yehya-ya"]
+            }
+        </script>
+
+        <style>
+            @view-transition {
+                navigation: auto;
+            }
+        </style>
+
+        <link rel="stylesheet" href="/src/css/app.css" />
+    </head>
+    <body class="bg-paper font-sans text-ink antialiased">
+        <a
+            href="#main"
+            class="sr-only focus:not-sr-only focus:absolute focus:left-4 focus:top-4 focus:z-50 focus:bg-paper focus:px-3 focus:py-2"
+        >
+            Skip to content
+        </a>
+
+        <header class="dot-grid relative isolate flex min-h-svh flex-col">
+            <canvas data-sonar class="absolute inset-0 -z-10 size-full" aria-hidden="true"></canvas>
+
+            <nav class="flex items-center justify-between px-6 pt-6 font-medium sm:px-10 sm:pt-8" aria-label="Sections">
+                <a href="/" class="hover:underline">yehya.dev</a>
+                <div class="flex gap-6">
+                    <a href="#work" class="hover:underline">Work</a>
+                    <a href="#contact" class="hover:underline">Contact</a>
+                </div>
+            </nav>
+
+            <div class="mx-auto flex max-w-5xl flex-1 flex-col items-center justify-center px-6 py-20 text-center">
+                <p
+                    class="intro inline-flex items-center gap-2.5 rounded-full border border-line bg-paper px-4 py-1.5 text-[0.9375rem] text-muted"
+                >
+                    <span class="size-2 rounded-full bg-ink"></span>
+                    FinTech engineer, Dubai
+                </p>
+                <h1
+                    class="intro mt-8 text-[clamp(3.5rem,11vw,9rem)] font-bold leading-[0.88] tracking-[-0.055em] [--intro-step:1]"
+                >
+                    Yehya Yasser
+                </h1>
+                <div class="intro mt-12 flex flex-wrap justify-center gap-3 [--intro-step:2]">
+                    <a href="#work" class="button button-solid">See my work</a>
+                    <a href="/yehya-yasser-cv.pdf" class="button button-outline" download>Download CV</a>
+                </div>
+            </div>
+        </header>
+
+        <main id="main">
+            <section class="mx-auto max-w-5xl px-6 pt-24 sm:pt-32" aria-labelledby="services-heading">
+                <h2 id="services-heading" class="text-muted">What I do</h2>
+                <ul class="mt-6 grid gap-x-10 gap-y-8 sm:grid-cols-2 lg:grid-cols-4">
+                    <li class="border-t border-ink pt-4">
+                        <h3 class="text-xl font-bold leading-tight">Lead teams</h3>
+                        <p class="mt-2 text-muted">A full project team: developers, DevOps and support.</p>
+                    </li>
+                    <li class="border-t border-ink pt-4">
+                        <h3 class="text-xl font-bold leading-tight">Modernise platforms</h3>
+                        <p class="mt-2 text-muted">Upgrade to the latest versions without stopping delivery.</p>
+                    </li>
+                    <li class="border-t border-ink pt-4">
+                        <h3 class="text-xl font-bold leading-tight">Run infrastructure</h3>
+                        <p class="mt-2 text-muted">Docker, AWS ECS and the pipelines that ship it.</p>
+                    </li>
+                    <li class="border-t border-ink pt-4">
+                        <h3 class="text-xl font-bold leading-tight">Build with AI</h3>
+                        <p class="mt-2 text-muted">Claude Code skills that review and prepare every release.</p>
+                    </li>
+                </ul>
+            </section>
+
+            <section id="work" class="mx-auto max-w-5xl px-6 py-24 sm:py-32" aria-labelledby="work-heading">
+                <h2 id="work-heading" class="text-muted">Selected work</h2>
+
+                <ul class="mt-6">
+                    <li class="reveal border-t border-line last:border-b">
+                        <a
+                            href="/work/platform-modernisation/"
+                            class="group -mx-4 my-1.5 flex items-baseline justify-between gap-6 rounded-2xl px-4 py-6 transition-colors duration-200 hover:bg-ink hover:text-paper focus-visible:bg-ink focus-visible:text-paper focus-visible:outline-none sm:py-8"
+                        >
+                            <span
+                                class="case-title text-balance text-[clamp(1.625rem,3.4vw,3rem)] font-bold leading-[1.02] tracking-[-0.035em]"
+                                style="view-transition-name: case-platform-modernisation"
+                                >Modernising a 300k‑line API</span
+                            >
+                            <span
+                                class="shrink-0 text-muted tabular-nums group-hover:text-paper/70 group-focus-visible:text-paper/70"
+                                >2026</span
+                            >
+                        </a>
+                    </li>
+                    <li class="reveal border-t border-line last:border-b">
+                        <a
+                            href="/work/ai-release-engineering/"
+                            class="group -mx-4 my-1.5 flex items-baseline justify-between gap-6 rounded-2xl px-4 py-6 transition-colors duration-200 hover:bg-ink hover:text-paper focus-visible:bg-ink focus-visible:text-paper focus-visible:outline-none sm:py-8"
+                        >
+                            <span
+                                class="case-title text-balance text-[clamp(1.625rem,3.4vw,3rem)] font-bold leading-[1.02] tracking-[-0.035em]"
+                                style="view-transition-name: case-ai-release-engineering"
+                                >AI code review and releases</span
+                            >
+                            <span
+                                class="shrink-0 text-muted tabular-nums group-hover:text-paper/70 group-focus-visible:text-paper/70"
+                                >2026</span
+                            >
+                        </a>
+                    </li>
+                    <li class="reveal border-t border-line last:border-b">
+                        <a
+                            href="/work/greenfield-platform/"
+                            class="group -mx-4 my-1.5 flex items-baseline justify-between gap-6 rounded-2xl px-4 py-6 transition-colors duration-200 hover:bg-ink hover:text-paper focus-visible:bg-ink focus-visible:text-paper focus-visible:outline-none sm:py-8"
+                        >
+                            <span
+                                class="case-title text-balance text-[clamp(1.625rem,3.4vw,3rem)] font-bold leading-[1.02] tracking-[-0.035em]"
+                                style="view-transition-name: case-greenfield-platform"
+                                >A new platform, from scratch</span
+                            >
+                            <span
+                                class="shrink-0 text-muted tabular-nums group-hover:text-paper/70 group-focus-visible:text-paper/70"
+                                >2025</span
+                            >
+                        </a>
+                    </li>
+                </ul>
+            </section>
+
+            <section id="projects" class="mx-auto max-w-5xl px-6 pb-24 sm:pb-32" aria-labelledby="projects-heading">
+                <h2 id="projects-heading" class="text-muted">Personal projects</h2>
+
+                <ul class="mt-6">
+                    <li class="reveal border-t border-line last:border-b">
+                        <a
+                            href="/work/masroofi/"
+                            class="group -mx-4 my-1.5 flex items-baseline justify-between gap-6 rounded-2xl px-4 py-6 transition-colors duration-200 hover:bg-ink hover:text-paper focus-visible:bg-ink focus-visible:text-paper focus-visible:outline-none sm:py-8"
+                        >
+                            <span
+                                class="case-title text-balance text-[clamp(1.625rem,3.4vw,3rem)] font-bold leading-[1.02] tracking-[-0.035em]"
+                                style="view-transition-name: case-masroofi"
+                                >Masroofi</span
+                            >
+                            <span
+                                class="shrink-0 text-muted tabular-nums group-hover:text-paper/70 group-focus-visible:text-paper/70"
+                                >2026</span
+                            >
+                        </a>
+                    </li>
+                    <li class="reveal border-t border-line last:border-b">
+                        <a
+                            href="/work/game-engine/"
+                            class="group -mx-4 my-1.5 flex items-baseline justify-between gap-6 rounded-2xl px-4 py-6 transition-colors duration-200 hover:bg-ink hover:text-paper focus-visible:bg-ink focus-visible:text-paper focus-visible:outline-none sm:py-8"
+                        >
+                            <span
+                                class="case-title text-balance text-[clamp(1.625rem,3.4vw,3rem)] font-bold leading-[1.02] tracking-[-0.035em]"
+                                style="view-transition-name: case-game-engine"
+                                >A 2D game engine</span
+                            >
+                            <span
+                                class="shrink-0 text-muted tabular-nums group-hover:text-paper/70 group-focus-visible:text-paper/70"
+                                >2021 – 2023</span
+                            >
+                        </a>
+                    </li>
+                    <li class="reveal border-t border-line last:border-b">
+                        <a
+                            href="/work/task-manager/"
+                            class="group -mx-4 my-1.5 flex items-baseline justify-between gap-6 rounded-2xl px-4 py-6 transition-colors duration-200 hover:bg-ink hover:text-paper focus-visible:bg-ink focus-visible:text-paper focus-visible:outline-none sm:py-8"
+                        >
+                            <span
+                                class="case-title text-balance text-[clamp(1.625rem,3.4vw,3rem)] font-bold leading-[1.02] tracking-[-0.035em]"
+                                style="view-transition-name: case-task-manager"
+                                >Task Manager</span
+                            >
+                            <span
+                                class="shrink-0 text-muted tabular-nums group-hover:text-paper/70 group-focus-visible:text-paper/70"
+                                >2021</span
+                            >
+                        </a>
+                    </li>
+                </ul>
+            </section>
+
+            <section
+                class="mx-auto grid max-w-5xl items-center gap-10 px-6 pb-24 sm:pb-32"
+                aria-labelledby="about-heading"
+            >
+                <div>
+                    <h2 id="about-heading" class="text-muted">About</h2>
+                    <p class="mt-4 max-w-[46ch] text-[clamp(1.375rem,2.4vw,1.75rem)] font-medium leading-snug">
+                        I studied Computer Engineering at Ankara University and started building SaaS products part-time
+                        in 2020. Since 2022 I’ve been in Dubai at ISKAAN, where I’m now the project lead. Outside work I
+                        build things for myself, like a finance app and a game engine.
+                    </p>
+                </div>
+            </section>
+
+            <section
+                class="mx-auto grid max-w-5xl gap-14 px-6 pb-24 sm:grid-cols-3 sm:pb-32"
+                aria-label="Career, stack and languages"
+            >
+                <div>
+                    <h2 class="text-muted">Career</h2>
+                    <ol class="mt-4 space-y-4">
+                        <li>
+                            <p class="font-bold leading-tight">Project Lead, ISKAAN</p>
+                            <p class="text-muted tabular-nums">2025 – now</p>
+                        </li>
+                        <li>
+                            <p class="font-bold leading-tight">Full Stack Developer, ISKAAN</p>
+                            <p class="text-muted tabular-nums">2022 – 2025</p>
+                        </li>
+                        <li>
+                            <p class="font-bold leading-tight">Full Stack Developer, ScanTitan</p>
+                            <p class="text-muted tabular-nums">2020 – 2022</p>
+                        </li>
+                        <li>
+                            <p class="font-bold leading-tight">Computer Engineering, Ankara University</p>
+                            <p class="text-muted tabular-nums">2017 – 2022</p>
+                        </li>
+                    </ol>
+                </div>
+
+                <div>
+                    <h2 class="text-muted">Stack</h2>
+                    <p class="mt-4 font-bold leading-snug">
+                        Laravel, PHP, MySQL, Angular, Vue, Docker, AWS, Azure DevOps
+                    </p>
+                </div>
+
+                <div>
+                    <h2 class="text-muted">Languages</h2>
+                    <ul class="mt-4 space-y-2">
+                        <li class="font-bold">Arabic (native)</li>
+                        <li class="font-bold">English (full professional)</li>
+                        <li class="font-bold">Turkish (intermediate)</li>
+                    </ul>
+                </div>
+            </section>
+
+            <section
+                id="contact"
+                class="dot-grid relative isolate overflow-hidden border-t border-line"
+                aria-labelledby="contact-heading"
+            >
+                <canvas data-sonar class="absolute inset-0 -z-10 size-full" aria-hidden="true"></canvas>
+
+                <div class="mx-auto flex max-w-5xl flex-col items-center px-6 py-32 text-center sm:py-44">
+                    <h2
+                        id="contact-heading"
+                        class="text-[clamp(3.25rem,9vw,7rem)] font-bold leading-[0.9] tracking-[-0.055em]"
+                    >
+                        Let’s talk.
+                    </h2>
+                    <div class="mt-10 flex flex-wrap justify-center gap-3">
+                        <a href="https://www.linkedin.com/in/yehya-yasser/" class="button button-solid">LinkedIn</a>
+                        <a href="https://github.com/Yehya-ya" class="button button-outline">GitHub</a>
+                        <a href="/yehya-yasser-cv.pdf" class="button button-outline" download>Download CV</a>
+                        <a href="mailto:yehyaysr@gmail.com" class="button button-outline">Email</a>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer
+            class="flex flex-col gap-2 px-6 py-8 text-[0.9375rem] text-muted sm:flex-row sm:justify-between sm:px-10"
+        >
+            <p>&copy; 2026 Yehya Yasser</p>
+            <p>
+                Plain HTML, Tailwind CSS and a little JavaScript.
+                <a href="https://github.com/Yehya-ya/portfolio" class="underline hover:text-ink">Source on GitHub</a>
+            </p>
+        </footer>
+
+        <script type="module" src="/src/js/sonar.js"></script>
+    </body>
+</html>

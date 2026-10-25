@@ -1,0 +1,260 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>A 2D game engine, Yehya Yasser</title>
+        <meta name="description" content="An engine and level editor in Java, built on OpenGL." />
+        <link rel="canonical" href="https://yehya.dev/work/game-engine/" />
+        <meta name="color-scheme" content="light dark" />
+        <meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)" />
+        <meta name="theme-color" content="#0c0c0c" media="(prefers-color-scheme: dark)" />
+        <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+
+        <meta property="og:type" content="article" />
+        <meta property="og:title" content="A 2D game engine, Yehya Yasser" />
+        <meta property="og:description" content="An engine and level editor in Java, built on OpenGL." />
+        <meta property="og:url" content="https://yehya.dev/work/game-engine/" />
+        <meta property="og:image" content="https://yehya.dev/og.png" />
+        <meta property="og:image:width" content="1200" />
+        <meta property="og:image:height" content="630" />
+        <meta name="twitter:card" content="summary_large_image" />
+
+        <style>
+            @view-transition {
+                navigation: auto;
+            }
+        </style>
+
+        <link rel="stylesheet" href="/src/css/app.css" />
+    </head>
+    <body class="bg-paper font-sans text-ink antialiased">
+        <a
+            href="#main"
+            class="sr-only focus:not-sr-only focus:absolute focus:left-4 focus:top-4 focus:z-50 focus:bg-paper focus:px-3 focus:py-2"
+        >
+            Skip to content
+        </a>
+
+        <header class="dot-grid border-b border-line">
+            <nav class="flex items-center justify-between px-6 pt-6 font-medium sm:px-10 sm:pt-8" aria-label="Site">
+                <a href="/" class="hover:underline">yehya.dev</a>
+                <a href="/#work" class="hover:underline">All work</a>
+            </nav>
+
+            <div class="mx-auto flex max-w-5xl flex-col items-center px-6 pb-20 pt-24 text-center sm:pb-28 sm:pt-32">
+                <p
+                    class="mb-8 inline-flex items-center gap-2.5 rounded-full border border-line bg-paper px-4 py-1.5 text-[0.9375rem] text-muted tabular-nums"
+                >
+                    <span class="size-2 rounded-full bg-ink"></span>
+                    2021 – 2023
+                </p>
+                <h1
+                    class="case-title max-w-[16ch] text-balance text-[clamp(2.75rem,7vw,5.5rem)] font-bold leading-[0.95] tracking-[-0.05em]"
+                    style="view-transition-name: case-game-engine"
+                >
+                    A 2D game engine
+                </h1>
+                <p class="mt-6 max-w-[40ch] text-balance text-[clamp(1.25rem,2.2vw,1.5rem)] text-muted">
+                    An engine and level editor in Java, built on OpenGL.
+                </p>
+            </div>
+        </header>
+
+        <main id="main" class="mx-auto max-w-5xl px-6 py-16 sm:py-24">
+            <dl class="mb-12 flex flex-wrap gap-x-12 gap-y-4">
+                <div>
+                    <dt class="text-muted">Stack</dt>
+                    <dd class="font-semibold">Java, LWJGL, OpenGL 4.5, ImGui, artemis-odb</dd>
+                </div>
+                <div>
+                    <dt class="text-muted">Links</dt>
+                    <dd class="flex flex-wrap gap-x-5 font-semibold">
+                        <a href="https://github.com/Yehya-ya/GameEngine" class="underline hover:no-underline"
+                            >Source on GitHub</a
+                        >
+                    </dd>
+                </div>
+            </dl>
+
+            <div class="space-y-6 sm:space-y-8 mb-14">
+                <figure>
+                    <img
+                        src="/images/projects/game-engine/editor.webp"
+                        alt="The level editor showing a 2D platformer level, with the scene hierarchy, a selected block with its move gizmo, its transform and texture in the properties panel, and render stats."
+                        width="1600"
+                        height="1000"
+                        loading="lazy"
+                        decoding="async"
+                        class="w-full rounded-2xl border border-line"
+                    />
+                    <figcaption class="mt-3 text-[0.9375rem] text-muted">
+                        The editor. All 39 sprites in this level are drawn in a single batch.
+                    </figcaption>
+                </figure>
+                <figure>
+                    <img
+                        src="/images/projects/game-engine/orbit-camera.webp"
+                        alt="The same level seen from an angle with the orbiting editor camera, the player selected with the scale gizmo."
+                        width="1600"
+                        height="1000"
+                        loading="lazy"
+                        decoding="async"
+                        class="w-full rounded-2xl border border-line"
+                    />
+                    <figcaption class="mt-3 text-[0.9375rem] text-muted">
+                        The editor camera orbits the scene, which shows the sprites as layered quads in 3D.
+                    </figcaption>
+                </figure>
+                <figure>
+                    <img
+                        src="/images/projects/game-engine/rotate-gizmo.webp"
+                        alt="A close-up of the level with a coin rotated 45 degrees using the rotate gizmo."
+                        width="1600"
+                        height="1000"
+                        loading="lazy"
+                        decoding="async"
+                        class="w-full rounded-2xl border border-line"
+                    />
+                    <figcaption class="mt-3 text-[0.9375rem] text-muted">Rotating a coin with the gizmo.</figcaption>
+                </figure>
+            </div>
+
+            <figure class="space-y-3 dot-grid mb-14 rounded-2xl border border-line p-5 sm:p-8">
+                <ol class="flex flex-col items-stretch gap-1.5 sm:flex-row sm:items-center">
+                    <li
+                        class="rounded-xl border border-line bg-paper px-4 py-3 text-center font-semibold leading-tight sm:flex-1"
+                    >
+                        Input events
+                    </li>
+                    <li class="flex justify-center text-muted" aria-hidden="true">
+                        <svg
+                            class="size-5 rotate-90 sm:rotate-0"
+                            viewBox="0 0 20 20"
+                            fill="none"
+                            stroke="currentColor"
+                            stroke-width="1.6"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                        >
+                            <path d="M3 10h13m-4-4 4 4-4 4" />
+                        </svg>
+                    </li>
+                    <li
+                        class="rounded-xl border border-line bg-paper px-4 py-3 text-center font-semibold leading-tight sm:flex-1"
+                    >
+                        Layers
+                    </li>
+                    <li class="flex justify-center text-muted" aria-hidden="true">
+                        <svg
+                            class="size-5 rotate-90 sm:rotate-0"
+                            viewBox="0 0 20 20"
+                            fill="none"
+                            stroke="currentColor"
+                            stroke-width="1.6"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                        >
+                            <path d="M3 10h13m-4-4 4 4-4 4" />
+                        </svg>
+                    </li>
+                    <li
+                        class="rounded-xl border border-line bg-paper px-4 py-3 text-center font-semibold leading-tight sm:flex-1"
+                    >
+                        ECS systems
+                    </li>
+                    <li class="flex justify-center text-muted" aria-hidden="true">
+                        <svg
+                            class="size-5 rotate-90 sm:rotate-0"
+                            viewBox="0 0 20 20"
+                            fill="none"
+                            stroke="currentColor"
+                            stroke-width="1.6"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                        >
+                            <path d="M3 10h13m-4-4 4 4-4 4" />
+                        </svg>
+                    </li>
+                    <li
+                        class="rounded-xl border border-line bg-paper px-4 py-3 text-center font-semibold leading-tight sm:flex-1"
+                    >
+                        Batch renderer
+                    </li>
+                    <li class="flex justify-center text-muted" aria-hidden="true">
+                        <svg
+                            class="size-5 rotate-90 sm:rotate-0"
+                            viewBox="0 0 20 20"
+                            fill="none"
+                            stroke="currentColor"
+                            stroke-width="1.6"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                        >
+                            <path d="M3 10h13m-4-4 4 4-4 4" />
+                        </svg>
+                    </li>
+                    <li
+                        class="rounded-xl border border-line bg-paper px-4 py-3 text-center font-semibold leading-tight sm:flex-1"
+                    >
+                        Editor viewport
+                    </li>
+                </ol>
+            </figure>
+
+            <article class="case-study-body text-xl">
+                <h2>What it does</h2>
+                <ul>
+                    <li>A level editor with docking panels: scene hierarchy, properties, content browser and stats.</li>
+                    <li>Add entities, give them a sprite or a colour, and move, rotate or scale them with gizmos.</li>
+                    <li>Click an entity in the viewport to select it.</li>
+                    <li>Save and open scenes as YAML, and drag textures and scenes in from the content browser.</li>
+                    <li>Orthographic and perspective cameras, plus an editor camera that orbits, pans and zooms.</li>
+                </ul>
+                <h2>How it’s built</h2>
+                <ul>
+                    <li>
+                        Follows the architecture of TheCherno’s Hazel engine, ported from C++ to Java: about 6,000
+                        lines.
+                    </li>
+                    <li>OpenGL 4.5 through LWJGL, using direct state access throughout.</li>
+                    <li>A batch renderer draws up to 2,000 quads per draw call, with 32 texture slots.</li>
+                    <li>
+                        Entities live in an entity-component system (artemis-odb); camera updates and rendering are
+                        systems.
+                    </li>
+                    <li>
+                        Picking draws each entity’s ID into a second framebuffer target, then reads back the pixel under
+                        the mouse.
+                    </li>
+                    <li>The engine talks to OpenGL only through interfaces, so another graphics API could be added.</li>
+                    <li>A Gradle multi-module build: the engine, the editor and a sandbox.</li>
+                </ul>
+            </article>
+
+            <a
+                href="/work/task-manager/"
+                class="group -mx-4 mt-20 flex items-baseline justify-between gap-6 rounded-2xl border-t border-line px-4 py-8 transition-colors duration-200 hover:border-transparent hover:bg-ink hover:text-paper focus-visible:bg-ink focus-visible:text-paper focus-visible:outline-none"
+            >
+                <span
+                    class="case-title next-title text-balance text-[clamp(1.625rem,3.4vw,3rem)] font-bold leading-[1.02] tracking-[-0.035em]"
+                    style="--case-name: case-task-manager"
+                    >Task Manager</span
+                >
+                <span class="shrink-0 text-muted group-hover:text-paper/70 group-focus-visible:text-paper/70"
+                    >Next</span
+                >
+            </a>
+        </main>
+
+        <footer
+            class="flex flex-col gap-2 px-6 py-8 text-[0.9375rem] text-muted sm:flex-row sm:justify-between sm:px-10"
+        >
+            <p>&copy; 2026 Yehya Yasser</p>
+            <p>
+                Plain HTML, Tailwind CSS and a little JavaScript.
+                <a href="https://github.com/Yehya-ya/portfolio" class="underline hover:text-ink">Source on GitHub</a>
+            </p>
+        </footer>
+    </body>
+</html>

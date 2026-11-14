@@ -10,6 +10,7 @@ My portfolio: plain HTML, Tailwind CSS and a little JavaScript, built with Vite 
 - `404.html`: the not-found page.
 - `src/css/app.css`: Tailwind styles, plus the motion: the opening, page transitions and scroll reveals.
 - `src/js/sonar.js`: the dot grid in the hero and contact sections.
+- `src/js/lightbox.js`: opens a case study's screenshots full size, one after another.
 - `public/`: copied into the build as it is. It holds the images, CV, preview image, icon, `sitemap.xml` and `robots.txt`.
 
 ## Working on it
@@ -27,7 +28,9 @@ npm run preview   # serves dist/ at http://localhost:4173
 2. Add a row for it to the list in `index.html`, under Selected work or Personal projects.
 3. Point the "Next" link on the page before it at the new page, and the new page's "Next" at the one after.
 4. Add its URL to `public/sitemap.xml`.
-5. Put images in `public/images/projects/<slug>/` as WebP, with `width` and `height` on each `<img>`.
+5. Put images in `public/images/projects/<slug>/` as WebP, with `width` and `height` on each `<img>`. To let a
+   screenshot open full size, wrap its `<img>` in `<a href="<same src>" data-lightbox>` and load
+   `/src/js/lightbox.js` at the end of the page.
 
 Case study URLs end in a slash (`/work/masroofi/`), so every link to one should too.
 
@@ -53,5 +56,6 @@ Cloud serves `/work/masroofi` and `/work/masroofi/` alike, and answers any other
 
 - **No server code:** every page is a static file served from the edge.
 - **Small assets:** one stylesheet (about 6 KB compressed) and one font file.
-- **Little JavaScript:** the only script is the home page's dot grid, about 2 KB compressed. Case study pages ship none.
+- **Little JavaScript:** the home page's dot grid, about 2 KB compressed, and on case studies with screenshots, the
+  lightbox, about 1 KB. Other case study pages ship none.
 - **Light images:** WebP, lazy-loaded, with sizes set so nothing jumps while they load.
